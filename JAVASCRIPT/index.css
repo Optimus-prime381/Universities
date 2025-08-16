@@ -1,0 +1,49 @@
+#myDiv {
+    background-color: lightblue;
+    width: 200px;
+    height: 300px;
+    border: 2px solid blue;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace;
+    color: darkblue;
+    font-size: large;
+}
+
+.custom-btn{
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    font-size: medium;
+}
+
+.custom-div{
+    background-color: rgb(109, 130, 223);
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(169, 8, 243);
+    padding-left: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Arial', sans-serif;
+    color: black;
+    font-size: medium;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top 5 Universities in Tamil Nadu</title>
+    <link rel="stylesheet" href="index1.css">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+            padding: 48px 36px 36px 36px;
+            max-width: 540px;
+            width: 100%;
+            text-align: center;
+        }
+        #top5List {
+            list-style: none;
+            padding: 0;
+            margin: 32px 0 32px 0;
+        }
+        #top5List li {
+            background: #f7fafc;
+            margin: 16px 0;
+            padding: 18px 0;
+            border-radius: 10px;
+            color: #34495e;
+            font-size: 1.25rem;
+            font-weight: 500;
+            box-shadow: 0 1px 4px rgba(44, 62, 80, 0.07);
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+        }
+        #top5List li:hover {
+            background: #e3f0ff;
+            transform: scale(1.03);
+        }
+        #goBackBtn {
+            background: linear-gradient(90deg, #4f8cff 0%, #38c6ff 100%);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 18px 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+            width: 100%;
+            margin-top: 18px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+            transition: background 0.2s, transform 0.1s;
+            display: block;
+        }
+        #goBackBtn:hover {
+            background: linear-gradient(90deg, #38c6ff 0%, #4f8cff 100%);
+            transform: translateY(-2px) scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size:2.2rem; margin-bottom: 0.7em;">Top 5 Universities in Tamil Nadu</h1>
+        <!-- Modal structure with IDs: top5UniversityName, top5UniversityPlace, top5UniversityCourses, top5UniversityReviews, top5Modal, closeTop5Modal -->
+        <ul id="top5List"></ul>
+        <button id="goBackBtn">Go Back</button>
+    </div>
+    <!-- Modal for university details -->
+    <div id="top5Modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeTop5Modal">&times;</span>
+            <h2 id="top5UniversityName"></h2>
+            <p id="top5UniversityPlace"></p>
+            <p id="top5UniversityCourses"></p>
+            <p id="top5UniversityReviews"></p>
+        </div>
+    </div>
+    <script src="top5.js"></script>
+    <script>
+        document.getElementById('goBackBtn').onclick = function() {
+            window.location.href = 'index1.html';
+        };
+    </script>
+</body>
+</html>
